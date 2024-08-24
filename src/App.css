@@ -1,0 +1,119 @@
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.container {
+  max-width: 900px; /* Wider container */
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow for premium look */
+}
+
+h1 {
+  font-size: 2.8rem; /* Larger title */
+  color: #343a40; /* Darker color for better contrast */
+  margin-bottom: 20px;
+  text-align: center; /* Center align for better aesthetics */
+}
+
+h2 {
+  font-size: 2rem; /* Slightly larger subheading */
+  color: #495057; /* Subheading color */
+  margin-top: 30px; /* More space above subheadings */
+  border-bottom: 2px solid #007bff; /* Underline for emphasis */
+  padding-bottom: 10px; /* Space below heading */
+}
+
+form {
+  margin-bottom: 30px; /* Spacing between forms */
+  display: flex; /* Flexbox for better layout */
+  flex-direction: column; /* Stack items vertically */
+}
+
+input, select {
+  margin: 10px 0; /* Spacing between input fields */
+  padding: 12px; /* Consistent padding */
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 6px; /* Slightly larger radius */
+  width: 100%; /* Full width for inputs */
+  transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+input:focus, select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  padding: 12px 20px; /* Slightly larger button */
+  border: none;
+  border-radius: 6px; /* Consistent rounded corners */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Add transform for effect */
+  font-size: 1rem; /* Larger font size */
+  margin-top: 10px; /* Space above buttons */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Remove gaps between table cells */
+  margin-top: 20px; /* Spacing above the table */
+}
+
+.table th, .table td {
+  border: 1px solid #dee2e6; /* Light gray border for table cells */
+  padding: 12px; /* Increased padding */
+  text-align: left;
+}
+
+.table th {
+  background-color: #007bff; /* Table header background color */
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping for better readability */
+}
+
+.table tr:hover {
+  background-color: #e9ecef; /* Highlight row on hover */
+}
+
+.notification {
+  background: #e0f7fa;
+  color: #00796b;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center; /* Center the notification message */
+  animation: fadeIn 0.5s; /* Add fade-in effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Adjust title size */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Adjust subheading size */
+  }
+  
+  input, select, button {
+    font-size: 0.9rem; /* Adjust input and button size */
+  }
+}
