@@ -1,0 +1,13 @@
+version: '3.8'  # Specify the version of Docker Compose
+
+services:
+  frontend:
+    image: sasiramakrishnan/course-frontend:latest  
+    build:
+      context: ./frontend  # Directory containing the Dockerfile for the frontend
+      dockerfile: Dockerfile  
+      - "3000:3000"  # Map port 3000 of the container to port 3000 on the host
+    environment:
+      - NODE_ENV=production  # Environment variable, adjust as needed
+
+ 
